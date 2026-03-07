@@ -1,0 +1,50 @@
+Error clicking Login link: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for getByRole('link', { name: 'Login' })
+
+    at HomePage.clickLogin (E:\PORTFOLIO\opencartplaywright\pages\HomePage.ts:46:38)
+    at E:\PORTFOLIO\opencartplaywright\tests\Logout.spec.ts:34:20 {
+  [Symbol(step)]: {
+    location: {
+      file: 'E:\\PORTFOLIO\\opencartplaywright\\pages\\HomePage.ts',
+      line: 46,
+      column: 38,
+      function: 'HomePage.clickLogin'
+    },
+    category: 'pw:api',
+    title: "Click getByRole('link', { name: 'Login' })",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:role=link[name="Login"i]',
+      strict: true,
+      timeout: 0
+    },
+    group: undefined,
+    stepId: 'pw:api@36',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@36',
+      _title: "Click getByRole('link', { name: 'Login' })",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1772101058490,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('link', { name: 'Login' })\x1B[22m\n",
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('link', { name: 'Login' })\x1B[22m\n" +
+        '\n' +
+        '    at HomePage.clickLogin (E:\\PORTFOLIO\\opencartplaywright\\pages\\HomePage.ts:46:38)\n' +
+        '    at E:\\PORTFOLIO\\opencartplaywright\\tests\\Logout.spec.ts:34:20',
+      cause: undefined
+    }
+  }
+}

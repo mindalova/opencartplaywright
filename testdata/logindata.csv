@@ -1,0 +1,18 @@
+[
+    {
+        "testName": "Login with valid credentials",
+        "email":"petya@mail.com",
+        "password":"123456"
+        "expected": "success"
+    }
+
+  {
+        "testName": "Login with invalid credentials",
+        "email":"petasdfya@mail.com",
+        "password":"12adsfas3456"
+        "expected": "failure"
+    }
+
+
+
+]

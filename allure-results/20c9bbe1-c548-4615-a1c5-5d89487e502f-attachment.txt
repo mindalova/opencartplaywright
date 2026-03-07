@@ -1,0 +1,50 @@
+Error clicking My Account link: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByText('My Account').first()
+
+    at HomePage.clickMyAccount (E:\PORTFOLIO\opencartplaywright\pages\HomePage.ts:28:38)
+    at E:\PORTFOLIO\opencartplaywright\tests\LoginDataDriven.spec.ts:17:24 {
+  [Symbol(step)]: {
+    location: {
+      file: 'E:\\PORTFOLIO\\opencartplaywright\\pages\\HomePage.ts',
+      line: 28,
+      column: 38,
+      function: 'HomePage.clickMyAccount'
+    },
+    category: 'pw:api',
+    title: "Click getByText('My Account').first()",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:text="My Account"i >> nth=0',
+      strict: true,
+      timeout: 0
+    },
+    group: undefined,
+    stepId: 'pw:api@34',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@34',
+      _title: "Click getByText('My Account').first()",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771917853401,
+    error: {
+      message: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByText('My Account').first()\x1B[22m\n",
+      stack: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByText('My Account').first()\x1B[22m\n" +
+        '\n' +
+        '    at HomePage.clickMyAccount (E:\\PORTFOLIO\\opencartplaywright\\pages\\HomePage.ts:28:38)\n' +
+        '    at E:\\PORTFOLIO\\opencartplaywright\\tests\\LoginDataDriven.spec.ts:17:24',
+      cause: undefined
+    }
+  }
+}

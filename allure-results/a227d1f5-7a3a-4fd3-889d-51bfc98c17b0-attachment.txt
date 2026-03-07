@@ -1,0 +1,1 @@
+My Account header is not visible. Current URL: http://localhost/opencart/upload/index.php?route=account/login&language=en-gb

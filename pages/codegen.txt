@@ -1,0 +1,44 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('http://localhost/opencart/upload/index.php?route=common/home&language=en-gb');
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Laptops & Notebooks', exact: true }).click();
+  await expect(page.getByRole('link', { name: 'Mice and Trackballs (0)' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Components', exact: true }).click();
+  await expect(page.getByRole('link', { name: 'iPhone 6' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Tablets' }).click();
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Phones & PDAs', exact: true }).click();
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'MP3 Players', exact: true }).click();
+  await page.getByRole('heading', { name: 'Phones & PDAs' }).click();
+  await page.getByRole('link', { name: 'Desktops (13)' }).click();
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Tablets (1)' }).click();
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Software (0)' }).click();
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Phones & PDAs (3)' }).click();
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Tablets (1)' }).click();
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('button', { name: ' 0 item(s) - $' }).click();
+  await expect(page.getByRole('link', { name: 'Register' })).toBeVisible();
+
+  await page.getByRole('link', { name: ' My Account ' }).click();
+  await page.getByRole('link', { name: ' Shopping Cart' }).click();
+  await expect(page.getByRole('link', { name: '$ Currency ' })).toBeVisible();
+
+  await page.getByRole('link', { name: 'Your Store' }).click();
+});

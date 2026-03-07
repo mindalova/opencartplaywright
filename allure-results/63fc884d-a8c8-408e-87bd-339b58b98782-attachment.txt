@@ -1,0 +1,59 @@
+Error clicking My Account link: locator.click: Error: strict mode violation: getByRole('link', { name: 'My Account' }) resolved to 2 elements:
+    1) <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">…</a> aka getByRole('link', { name: ' My Account ' })
+    2) <a href="http://localhost/opencart/upload/index.php?route=account/account&language=en-gb">My Account</a> aka getByRole('link', { name: 'My Account', exact: true })
+
+Call log:
+  - waiting for getByRole('link', { name: 'My Account' })
+
+    at HomePage.clickMyAccount (E:\PORTFOLIO\opencartplaywright\pages\homepage.ts:32:52)
+    at E:\PORTFOLIO\opencartplaywright\tests\accountRegistration.spec.ts:13:16 {
+  [Symbol(step)]: {
+    location: {
+      file: 'E:\\PORTFOLIO\\opencartplaywright\\pages\\homepage.ts',
+      line: 32,
+      column: 52,
+      function: 'HomePage.clickMyAccount'
+    },
+    category: 'pw:api',
+    title: "Click getByRole('link', { name: 'My Account' })",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:role=link[name="My Account"i]',
+      strict: true,
+      timeout: 0
+    },
+    group: undefined,
+    stepId: 'pw:api@35',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@35',
+      _title: "Click getByRole('link', { name: 'My Account' })",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1770881815313,
+    error: {
+      message: "Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'My Account' }) resolved to 2 elements:\n" +
+        `    1) <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">…</a> aka getByRole('link', { name: ' My Account ' })\n` +
+        `    2) <a href="http://localhost/opencart/upload/index.php?route=account/account&language=en-gb">My Account</a> aka getByRole('link', { name: 'My Account', exact: true })\n` +
+        '\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('link', { name: 'My Account' })\x1B[22m\n",
+      stack: "Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'My Account' }) resolved to 2 elements:\n" +
+        `    1) <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">…</a> aka getByRole('link', { name: ' My Account ' })\n` +
+        `    2) <a href="http://localhost/opencart/upload/index.php?route=account/account&language=en-gb">My Account</a> aka getByRole('link', { name: 'My Account', exact: true })\n` +
+        '\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('link', { name: 'My Account' })\x1B[22m\n" +
+        '\n' +
+        '    at HomePage.clickMyAccount (E:\\PORTFOLIO\\opencartplaywright\\pages\\homepage.ts:32:52)\n' +
+        '    at E:\\PORTFOLIO\\opencartplaywright\\tests\\accountRegistration.spec.ts:13:16',
+      cause: undefined
+    }
+  }
+}
